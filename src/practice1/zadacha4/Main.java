@@ -1,5 +1,6 @@
-package zadacha4;
+package practice1.zadacha4;
 import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {

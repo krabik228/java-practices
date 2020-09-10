@@ -1,4 +1,4 @@
-package zadacha3;
+package practice1.zadacha3;
 
 public class Main {
     public static void main(String[] args) {
