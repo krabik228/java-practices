@@ -1,4 +1,4 @@
-package zadacha2;
+package practice1.zadacha2;
 
 public class Main {
 
