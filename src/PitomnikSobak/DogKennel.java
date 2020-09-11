@@ -26,5 +26,6 @@ public class DogKennel {
         System.out.println(pitomnik.dogs[1]);
         sobaka1.HumanAge();
         sobaka2.HumanAge();
+
     }
 }
