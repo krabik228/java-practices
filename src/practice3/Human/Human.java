@@ -4,6 +4,31 @@ public class Human {
     private Head head;
     private Leg leg;
     private Hand hand;
+
+    public Head getHead() {
+        return head;
+    }
+
+    public void setHead(Head head) {
+        this.head = head;
+    }
+
+    public Leg getLeg() {
+        return leg;
+    }
+
+    public void setLeg(Leg leg) {
+        this.leg = leg;
+    }
+
+    public Hand getHand() {
+        return hand;
+    }
+
+    public void setHand(Hand hand) {
+        this.hand = hand;
+    }
+
     public Human(Head g, Leg n, Hand r){
         this.head = g;
         this.leg = n;
