@@ -4,29 +4,29 @@ import javax.swing.*;
 import java.awt.*;
 
 public abstract class Shape extends JFrame {
-    private Color color;
-    private int x;
-    private  int y;
 
-    public Shape(int x ,int y,Color color){
+    private String color;
+    private int x, y, width, height;
+
+    public Shape(int x, int y, int width, int height, String color) {
         this.x = x;
         this.y = y;
+        this.width = width;
+        this.height = height;
         this.color = color;
     }
 
-    public void setColor(Color color) {
-        this.color = color;
+    public abstract void drawShape(Graphics g);
+
+    public int getHeight() {
+        return height;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public int getWidth() {
+        return width;
     }
 
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public Color getColor() {
+    public String getColor() {
         return color;
     }
 
@@ -37,5 +37,4 @@ public abstract class Shape extends JFrame {
     public int getY() {
         return y;
     }
-    public abstract void paintt(Graphics g);
 }

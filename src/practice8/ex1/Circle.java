@@ -4,14 +4,13 @@ import java.awt.*;
 
 public class Circle extends Shape {
 
-
-    public Circle(int x, int y, Color color) {
-        super(x, y, color);
+    public Circle(int x, int y, int radius, String color) {
+        super(x, y, radius, radius, color);
     }
 
-
-    public void paintt(Graphics g) {
-        g.setColor(getColor());
-        g.fillOval(getX(), getY(), 50, 50);
+    @Override
+    public void drawShape(Graphics g) {
+        g.setColor(Color.decode(this.getColor()));
+        g.fillOval(this.getX(), this.getY(), this.getWidth(), this.getHeight());
     }
 }
